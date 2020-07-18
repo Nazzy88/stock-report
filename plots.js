@@ -1,4 +1,4 @@
-var apiKey = "YOUR API KEY HERE";
+var apiKey = "ZmcsrcxBxu3Y5ykz_yge";
 
 function buildPlot() {
     var url = `https://www.quandl.com/api/v3/datasets/WIKI/AMZN.json?start_date=2017-01-01&end_date=2018-11-22&api_key=${apiKey}`;

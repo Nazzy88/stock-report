@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Financial Plot</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel='stylesheet' href="style.css" type='text/css'>
     <script src="https://unpkg.com/simple-statistics@5.0.0/dist/simple-statistics.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
@@ -17,8 +17,8 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1>
-                Amazon Financial Report
+            <h1 id = "pagetitle">
+                Stock Financial Report
                 <span id="report-date" style="float: right;">2019</span>
             </h1>
             <p></p>
@@ -31,7 +31,14 @@
                         Company Profile
                     </div>
                 </div>
-                <div class="company">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="stockInput">Stock</label>
+                        <input type="text" class="form-control" id="stockInput" placeholder="Enter a stock">
+                    </div>
+                    <button id="submit" type="submit" class="btn btn-default">Plot Stock</button>
+                </form>
+                <div>
                     Text here Text here
                 </div>
             </div>
